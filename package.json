@@ -8,7 +8,8 @@
   "version": "0.0.7",
   "main": "src/echo-table-2-file.js",
   "scripts": {
-    "test": "mocha test/echo.test.js"
+    "test": "mocha test/echo.test.js",
+    "compile": "./node_modules/babel-cli/bin/babel.js -d lib/ src/"
   },
   "license": "MIT",
   "keywords": [
@@ -38,5 +39,8 @@
     "chai": "^1.9.1",
     "chai-fs": "^0.1.0",
     "mocha": "^2.4.5"
+  },
+  "babel":{
+    "presets": ["es2015"]
   }
 }
